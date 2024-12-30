@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Information Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color:white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(229, 215, 215);
+            box-shadow: 0 4px 8px black;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: white;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-group label, .checkbox-group label {
+            margin: 5px 0;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #15781a;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Friend Information Form</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td class="form-section">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-section">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-section">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="100" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-section">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" name="gender" value="other" required> Other</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-section">
+                    <label>class subjects</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="sports"> PSLB</label>
+                        <label><input type="checkbox" name="interests" value="music"> Chemistry</label>
+                        <label><input type="checkbox" name="interests" value="travel"> Biology</label>
+                        <label><input type="checkbox" name="interests" value="reading"> Physic</label>
+                        <label><input type="checkbox" name="interests" value="cooking"> Math</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="form-section">
+                    <label for="city">City:</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select City</option>
+                        <option value="new_york">Pune</option>
+                        <option value="los_angeles">Mumbai</option>
+                        <option value="chicago">Latur</option>
+                        <option value="miami">Nashik</option>
+                        <option value="san_francisco">nanded</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn">Submit</button>
+                   
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
