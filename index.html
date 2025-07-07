@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rehan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="icon-512.png" />
+<meta name="theme-color" content="#00b894" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">REHAN AGA</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Home/About Section -->
+<section id="home" class="section home-section">
+  <div class="hero-content">
+    <h1 id="greeting" class="hero-greeting"></h1>
+
+    <!-- 👇 Profile Image -->
+    
+
+    <h2 class="hero-subtitle">I'm Rehan — a passionate AI & Web Developer 🚀</h2>
+    <p class="about-text">
+      I specialize in creating intelligent web experiences using AI, machine learning, and modern web technologies. Whether it's building responsive websites or developing smart solutions for agriculture and business, I love turning ideas into impactful digital products.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="hero-btn">💼 View Projects</a>
+      <a href="file:///C:/Rehan%20Aga%20Tantrata/resume.pdf" download class="hero-btn">📄 Download Resume</a>
+      <button id="install-btn" class="hero-btn" style="display: none;">📲 Install App</button>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills-section">
+  <h2>🛠️ My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">🌐 HTML5</div>
+    <div class="skill-card">🎨 CSS3</div>
+    <div class="skill-card">⚙️ JavaScript</div>
+    <div class="skill-card">🐍 Python</div>
+    <div class="skill-card">⚛️ React</div>
+    <div class="skill-card">🤖 Machine Learning</div>
+    <div class="skill-card">📊 Data Analysis</div>
+    <div class="skill-card">🧠 Artificial Intelligence</div>
+    <div class="skill-card">🟢 Node Js</div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+  <h2>💼 My Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Crowdy Application</h3>
+      <p>It's short, memorable, and reflects the app's purpose of fostering connection and collaboration.</p>
+      <div class="project-links">
+        <a href="https://github.com/yourusername/aifarming" target="_blank">GitHub</a>
+        <a href="https://yourdemo.com/farming" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Franchise Market Analyzer</h3>
+      <p>Market research tool using Python and Excel for analyzing emerging franchise brands.</p>
+      <div class="project-links">
+        <a href="https://github.com/RehanAga/document/commit/118ebf7d00630cd2557d4de27ffeeba1aab80e56" target="_blank">GitHub</a>
+        <a href="https://yourdemo.com/franchise" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio website with animations, PWA support, and contact form.</p>
+      <div class="project-links">
+        <a href="https://rehanaga.github.io/Rehan-Portfolio/" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <h2>📬 Contact Me</h2>
+  <p>Have a project in mind or want to collaborate? Let’s talk!</p>
+
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div id="form-status" class="form-status"></div>
+
+  <div class="social-icons">
+    <a href="https://github.com/RehanAga/document" target="_blank">🐱 GitHub</a>
+    <a href="https://linkedin.com/in/yourlinkedin" target="_blank">💼 LinkedIn</a>
+  </div>
+</section>
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<footer class="site-footer">
+  © 2025 Rehan Aga. All rights reserved.
+</footer>
+
+<!-- Your JavaScript File -->
+<script src="script.js"></script>
+</body>
+</html>
